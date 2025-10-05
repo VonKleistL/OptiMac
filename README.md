@@ -120,8 +120,6 @@ OptiMac is open source and welcomes contributions! Whether you're:
 - **Contributing code** - Add new optimizations or improve the UI
 - **Improving docs** - Help other users get the most out of OptiMac
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
 ## Roadmap
 
 **Coming Soon:**
@@ -136,7 +134,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 If OptiMac helped speed up your Mac:
 - **Star the repository** to help others discover it
 - **Share on social media** - Spread the word to fellow Mac users  
-- **Sponsor development** - Support continued improvements and new features
 - **Contribute code** - Help make OptiMac even better
 
 ## Support & Community
