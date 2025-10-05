@@ -1,0 +1,14 @@
+# OptiMac Requirements
+# This tool uses only standard Python libraries included with macOS
+
+# Core GUI framework (included with Python on macOS)
+tkinter
+
+# Standard library modules used:
+# - subprocess (for running shell commands)
+# - threading (for non-blocking operations)  
+# - os (for system operations)
+# - sys (for system information)
+# - pathlib (for path operations)
+
+# No additional packages required!
