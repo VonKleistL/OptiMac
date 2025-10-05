@@ -22,6 +22,9 @@ class MacOptimizer:
         self.root.geometry("800x700")
         self.root.configure(bg='#f0f0f0')
         
+        # Initialize optimizations dictionary FIRST
+        self.optimizations = {}
+        
         # Create main frame
         main_frame = ttk.Frame(root, padding="10")
         main_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
@@ -79,10 +82,8 @@ class MacOptimizer:
         status_bar = ttk.Label(main_frame, textvariable=self.status_var, relief=tk.SUNKEN, anchor=tk.W)
         status_bar.grid(row=5, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=(10, 0))
         
-        # Store checkboxes for each optimization
-        self.optimizations = {}
-        
-        self.log("OptiMac initialized. Ready to optimize your Apple Silicon Mac!")
+        # Log initialization message
+        self.log("🚀 OptiMac initialized. Ready to optimize your Apple Silicon Mac!")
 
     def create_memory_tab(self):
         memory_frame = ttk.Frame(self.notebook, padding="10")
@@ -154,7 +155,7 @@ class MacOptimizer:
         
         # Warning label
         warning_label = ttk.Label(advanced_frame, 
-                                 text="Advanced options may affect system stability. Use with caution!",
+                                 text="⚠️  Advanced options may affect system stability. Use with caution!",
                                  foreground='red', font=('SF Pro Display', 10, 'bold'))
         warning_label.grid(row=10, column=0, columnspan=2, pady=(20, 0))
 
@@ -185,15 +186,15 @@ class MacOptimizer:
     def run_command(self, command, description):
         """Run a shell command and log the output"""
         try:
-            self.log(f"Running: {description}")
+            self.log(f"🔄 Running: {description}")
             result = subprocess.run(command, shell=True, capture_output=True, text=True)
             if result.returncode == 0:
                 self.log(f"✅ Success: {description}")
-                if result.stdout:
+                if result.stdout.strip():
                     self.log(f"Output: {result.stdout.strip()}")
             else:
                 self.log(f"❌ Error: {description}")
-                if result.stderr:
+                if result.stderr.strip():
                     self.log(f"Error: {result.stderr.strip()}")
         except Exception as e:
             self.log(f"❌ Exception running {description}: {str(e)}")
@@ -208,7 +209,8 @@ class MacOptimizer:
         
         # Confirm before running
         if not messagebox.askyesno("Confirm Optimizations", 
-                                  f"Are you sure you want to run {len(selected)} optimization(s)?"):
+                                  f"Are you sure you want to run {len(selected)} optimization(s)?\n\nSelected:\n" + 
+                                  "\n".join([f"• {key.replace('_', ' ').title()}" for key in selected])):
             return
         
         self.status_var.set("Running optimizations...")
@@ -225,8 +227,9 @@ class MacOptimizer:
 
     def optimization_complete(self):
         """Called when optimizations are complete"""
-        self.status_var.set("Optimizations complete!")
+        self.status_var.set("✅ Optimizations complete!")
         self.run_selected_btn.configure(state='normal')
+        self.log("🎉 All optimizations completed! Some changes may require a restart to take effect.")
 
     def execute_optimizations(self, selected):
         """Execute the selected optimizations"""
@@ -264,6 +267,8 @@ class MacOptimizer:
             "kernel_optimization": ("echo 'kern.maxfiles=65536' | sudo tee -a /etc/sysctl.conf", "Applying kernel tweaks"),
             "create_backup": ("sudo tmutil startbackup", "Creating system backup"),
         }
+        
+        self.log(f"🚀 Starting optimization of {len(selected)} items...")
         
         for optimization in selected:
             if optimization in optimization_commands:
