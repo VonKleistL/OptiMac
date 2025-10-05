@@ -48,16 +48,10 @@ OptiMac is a comprehensive, user-friendly macOS optimization suite that brings p
 
 ## Installation
 
-### Quick Start (Recommended)
+### Quick Start - Launch GUI
 ```bash
 git clone https://github.com/VonKleistL/OptiMac.git
 cd OptiMac
-chmod +x install.sh
-./install.sh
-```
-
-### Direct Launch
-```bash
 python3 macos_optimizer.py
 ```
 
