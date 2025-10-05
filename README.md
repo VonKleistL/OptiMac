@@ -61,10 +61,6 @@ chmod +x install.sh
 python3 macos_optimizer.py
 ```
 
-## Screenshots
-
-*Add screenshots showing the main interface, different tabs, and optimization results*
-
 ## Perfect For
 
 - **Content Creators** - Maximize performance for video editing, streaming, and rendering
