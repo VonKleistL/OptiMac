@@ -144,7 +144,25 @@ Perfect for: When websites won't load or load slowly
 
 Optimize TCP settings
 Command: sudo sysctl -w net.inet.tcp.delayed_ack=0
-(Already explained above)
+Optimize TCP Settings
+Line 259: "optimize_tcp": ("sudo sysctl -w net.inet.tcp.delayed_ack=0", "Optimizing TCP settings")
+
+What It Does:
+bash
+sudo sysctl -w net.inet.tcp.delayed_ack=0
+Technical Details:
+Disables TCP Delayed ACK - Turns off the delayed acknowledgment feature
+
+Immediate ACK responses - TCP packets are acknowledged immediately instead of waiting
+
+Benefits for Your M2 Mac:
+Lower network latency - Reduces ping times in games and real-time applications
+
+Faster web browsing - HTTP requests get acknowledged faster
+
+Better streaming performance - Video calls and streaming have less delay
+
+Improved gaming experience - Reduced input lag in online games
 
 Disable IPv6 (if issues)
 Command: networksetup -setv6off Wi-Fi
@@ -160,7 +178,29 @@ Use Only If: Experiencing specific IPv6-related connectivity problems
 
 Optimize Wi-Fi settings
 Command: sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -z
-(Already explained above)
+2. Optimize Wi-Fi Settings
+Line 260: "optimize_wifi": ("sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -z", "Optimizing Wi-Fi")
+
+What It Does:
+bash
+sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -z
+Technical Details:
+Disassociates from current Wi-Fi network - Disconnects from the current wireless network
+
+Forces Wi-Fi interface reset - Clears cached network state and settings
+
+Triggers fresh network association - Forces macOS to reconnect with optimized settings
+
+Benefits for Your M2 Mac:
+Resolves connection issues - Fixes stuck or slow Wi-Fi connections
+
+Clears corrupted network cache - Removes problematic cached network data
+
+Optimizes channel selection - Forces re-evaluation of best available channels
+
+Improves signal negotiation - Re-establishes connection with optimal parameters
+
+Fixes DNS resolution problems - Clears network-level DNS issues
 
 4. Development Tab
 Optimize Python/Conda
@@ -201,7 +241,23 @@ Important for: Maintaining your development environment
 
 Optimize Node.js
 Command: npm cache clean --force
-(Already explained above)
+Node.js Optimization Details
+Looking at line 273 in your macos_optimizer.py file, here's exactly what the Node.js optimization does:
+
+Command Executed:
+bash
+npm cache clean --force
+What It Does:
+"Optimizing Node.js" - This command forcefully cleans the npm cache
+
+Specific Benefits:
+Frees up disk space - npm cache can grow quite large over time with package downloads
+
+Resolves package installation issues - Corrupted cache files can cause npm install failures
+
+Improves npm performance - Fresh cache means faster, more reliable package installations
+
+Cleans up outdated cached packages - Removes old versions of packages that are no longer needed
 
 5. Advanced Tab
 Thermal optimization
