@@ -1,22 +1,21 @@
 # OptiMac Enhanced Requirements
-# Core GUI and system libraries
+# Core dependencies for enhanced functionality
 requests>=2.31.0
-rumps>=0.4.0  # For menu bar functionality
+rumps>=0.4.0
 
-# Development and build tools
-py2app>=0.28.6  # For creating macOS app bundles
-pyinstaller>=5.13.0  # Alternative app bundler
+# Build tools (install when building DMG)
+py2app>=0.28.6
+pyinstaller>=5.13.0
 
-# Optional: For enhanced functionality
-psutil>=5.9.0  # System monitoring
-plyer>=2.1.0   # Cross-platform notifications
+# Optional enhancements
+psutil>=5.9.0
+plyer>=2.1.0
 
+# Note: tkinter is built into Python on macOS - no need to install
 # Standard library modules used (built into Python):
 # - tkinter (GUI framework)
 # - subprocess (for running shell commands)
-# - threading (for non-blocking operations)  
-# - os (for system operations)
-# - sys (for system information)
-# - pathlib (for path operations)
+# - threading (for non-blocking operations)
+# - os, sys, pathlib (system operations)
 # - json (for profile management)
 # - datetime (for timestamps)
