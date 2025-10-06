@@ -215,7 +215,6 @@ If OptiMac Enhanced helped speed up your Mac:
 
 ---
 
-** ransform your Mac's performance today with OptiMac Enhanced - because every Mac deserves to run at its best!**
 
 *Built for the Apple Silicon Mac community by [VonKleistL](https://github.com/VonKleistL)*
 
