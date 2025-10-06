@@ -1,14 +1,22 @@
-# OptiMac Requirements
-# This tool uses only standard Python libraries included with macOS
+# OptiMac Enhanced Requirements
+# Core GUI and system libraries
+requests>=2.31.0
+rumps>=0.4.0  # For menu bar functionality
 
-# Core GUI framework (included with Python on macOS)
-tkinter
+# Development and build tools
+py2app>=0.28.6  # For creating macOS app bundles
+pyinstaller>=5.13.0  # Alternative app bundler
 
-# Standard library modules used:
+# Optional: For enhanced functionality
+psutil>=5.9.0  # System monitoring
+plyer>=2.1.0   # Cross-platform notifications
+
+# Standard library modules used (built into Python):
+# - tkinter (GUI framework)
 # - subprocess (for running shell commands)
 # - threading (for non-blocking operations)  
 # - os (for system operations)
 # - sys (for system information)
 # - pathlib (for path operations)
-
-# No additional packages required!
+# - json (for profile management)
+# - datetime (for timestamps)
