@@ -1,0 +1,102 @@
+name: Build and Release OptiMac Enhanced
+
+on:
+  push:
+    tags:
+      - 'v*'  # Trigger on version tags like v2.0.0
+  workflow_dispatch:  # Allow manual triggers
+
+jobs:
+  build:
+    runs-on: macos-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        brew install create-dmg
+    
+    - name: Build app bundle
+      run: |
+        python setup.py py2app
+    
+    - name: Create DMG
+      run: |
+        chmod +x build_dmg.sh
+        ./build_dmg.sh
+    
+    - name: Get version from tag
+      id: get_version
+      run: |
+        if [[ $GITHUB_REF == refs/tags/* ]]; then
+          echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+        else
+          echo "VERSION=dev-$(date +%Y%m%d-%H%M%S)" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Upload DMG artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: OptiMac-Enhanced-${{ steps.get_version.outputs.VERSION }}
+        path: '*.dmg'
+    
+    - name: Create Release
+      if: startsWith(github.ref, 'refs/tags/')
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: ${{ github.ref }}
+        name: OptiMac Enhanced v${{ steps.get_version.outputs.VERSION }}
+        body: |
+          # OptiMac Enhanced v${{ steps.get_version.outputs.VERSION }}
+          
+          ## What's New
+          🎉 **Enhanced OptiMac with exciting new features!**
+          
+          ### ✨ New Features
+          - 🍎 **Menu Bar Integration** - Quick access from your menu bar
+          - 👤 **User Profiles** - Save and switch between optimization profiles
+          - 🔍 **Spotlight Re-indexing** - Rebuild Spotlight index for better search
+          - 🔄 **Auto-Updates** - Automatic update checking and notifications
+          
+          ### 🛠️ Improvements
+          - Enhanced GUI with better organization
+          - Improved performance and stability
+          - Better error handling and logging
+          - Streamlined user experience
+          
+          ### 📦 Installation
+          1. Download the DMG file below
+          2. Open the DMG and drag OptiMac Enhanced to Applications
+          3. Launch from Applications or enable menu bar mode
+          
+          ### 🔧 System Requirements
+          - macOS 10.15 (Catalina) or later
+          - Apple Silicon (M1/M2/M3) or Intel Mac
+          - Administrator privileges for system optimizations
+          
+          ### ⚠️ Important Notes
+          - Always backup your system before running optimizations
+          - Some optimizations may require a restart to take effect
+          - Use advanced options with caution
+          
+          **Full Changelog**: https://github.com/VonKleistL/OptiMac/compare/v1.0.0...v${{ steps.get_version.outputs.VERSION }}
+        files: '*.dmg'
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Update latest release info
+      if: startsWith(github.ref, 'refs/tags/')
+      run: |
+        echo "Release created successfully!"
+        echo "Users will now be notified of the update through the app."
