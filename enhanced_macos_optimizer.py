@@ -24,12 +24,15 @@ from datetime import datetime
 CURRENT_VERSION = "2.0.0"
 UPDATE_URL = "https://api.github.com/repos/VonKleistL/OptiMac/releases/latest"
 PROFILES_DIR = Path.home() / ".optimac_profiles"
+ICON_PATH = Path(__file__).parent / "optimac_icon.icns"  # Custom icon path
 
 class OptiMacMenuBar(rumps.App):
     """Menu bar application for OptiMac"""
     
     def __init__(self):
-        super(OptiMacMenuBar, self).__init__("⚡", title="OptiMac")
+        # Use custom icon if available, otherwise use text
+        icon_path = str(ICON_PATH) if ICON_PATH.exists() else None
+        super(OptiMacMenuBar, self).__init__("OptiMac", icon=icon_path, title="")
         self.main_app = None
         self.profiles = self.load_profiles()
         self.setup_menu()
@@ -184,6 +187,13 @@ class MacOptimizer:
         self.root.geometry("900x800")
         self.root.configure(bg='#f0f0f0')
         
+        # Set custom icon for GUI if available
+        if ICON_PATH.exists():
+            try:
+                self.root.iconbitmap(str(ICON_PATH))
+            except:
+                pass  # Icon loading failed, continue without it
+        
         # Initialize optimizations dictionary FIRST
         self.optimizations = {}
         self.profiles = self.load_profiles()
@@ -252,7 +262,7 @@ class MacOptimizer:
         status_bar.grid(row=6, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=(10, 0))
         
         # Log initialization message
-        self.log(f"🚀 OptiMac Enhanced v{CURRENT_VERSION} initialized. Ready to optimize your Apple Silicon Mac!")
+        self.log(f"🚀 OptiMac Enhanced v{CURRENT_VERSION} initialized with custom icon. Ready to optimize your Apple Silicon Mac!")
     
     def create_profile_management(self, parent):
         """Create profile management interface"""
