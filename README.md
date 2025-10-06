@@ -52,7 +52,7 @@ OptiMac Enhanced is a comprehensive, user-friendly macOS optimization suite that
 - **Clear system caches** - Remove accumulated cache files eating up storage
 - **Optimize swap settings** - Fine-tune virtual memory for your specific hardware
 - **Disable/Enable Spotlight indexing** - Control resource-heavy background indexing
-- **🆕 Re-index Spotlight** - Rebuild search index for better performance
+- **Re-index Spotlight** - Rebuild search index for better performance
 - **Reduce system animations** - Eliminate UI lag for snappier interactions
 
 ### System Tweaks
