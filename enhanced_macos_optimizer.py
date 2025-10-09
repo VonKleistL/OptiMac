@@ -60,7 +60,7 @@ class OptiMacMenuBar(rumps.App):
             # Create AppleScript to launch GUI in new Terminal window
             applescript = f'''
             tell application "Terminal"
-                do script "cd '{os.path.dirname(__file__)}' && python optimac_gui.py"
+                do script "cd '{os.path.dirname(__file__)}' && python3 optimac_gui.py"
                 activate
             end tell
             '''
