@@ -1,11 +1,10 @@
+![CleanShot 2025-10-27 at 15 34 59@2x](https://github.com/user-attachments/assets/647b8195-19e3-45a6-aa22-dbc6a97f6e83)
+![CleanShot 2025-10-27 at 15 35 14@2x](https://github.com/user-attachments/assets/2d4c3ea5-d850-4006-b71b-4d7106ba75c1)
+
+
 # OptiMac v3.0 - Advanced MacOS Optimization Suite (Now in SwiftUI) 
 
 **MacOS optimisation tool written in native swiftUI. Clean, easy to use and most importantly incredibly minimal on resources.
-
-<img width="1846" height="1672" alt="image" src="https://github.com/user-attachments/assets/60e35a16-c956-4cc1-bf15-53f59645c2a3" />
-<img width="1888" height="1728" alt="image" src="https://github.com/user-attachments/assets/28eb9598-eff2-477c-9cef-e05cd3928bd8" />
-<img width="606" height="512" alt="image" src="https://github.com/user-attachments/assets/eef193a4-0839-4c7d-9900-f18c86dce1f3" />
-
 ## What's New in v3.0
 
 ###What's New:
