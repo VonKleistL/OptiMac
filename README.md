@@ -2,6 +2,10 @@
 
 **MacOS optimisation tool written in native swiftUI. Clean, easy to use and most importantly incredibly minimal on resources.
 
+<img width="1846" height="1672" alt="image" src="https://github.com/user-attachments/assets/60e35a16-c956-4cc1-bf15-53f59645c2a3" />
+<img width="1888" height="1728" alt="image" src="https://github.com/user-attachments/assets/28eb9598-eff2-477c-9cef-e05cd3928bd8" />
+<img width="606" height="512" alt="image" src="https://github.com/user-attachments/assets/eef193a4-0839-4c7d-9900-f18c86dce1f3" />
+
 ## What's New in v3.0
 
 ###What's New:
