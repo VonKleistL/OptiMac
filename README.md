@@ -1,49 +1,15 @@
-# OptiMac Enhanced v2.0 - Advanced MacOS Optimization Suite
+# OptiMac v3.0 - Advanced MacOS Optimization Suite (Now in SwiftUI) 
 
-** Next-generation GUI-based performance optimization tool with Menu Bar integration, designed specifically for Apple Silicon Macs**
+**MacOS optimisation tool written in native swiftUI. Clean, easy to use and most importantly incredibly minimal on resources.
 
-OptiMac Enhanced is a comprehensive, user-friendly macOS optimization suite that brings powerful system tweaks and performance enhancements to your M-Series Mac through an intuitive graphical interface. Now with **Menu Bar integration**, **User Profiles**, **Auto-Updates**, and **One-Click DMG Installation**!
+## What's New in v3.0
 
-## What's New in v2.0
-
-### **Menu Bar Integration**
-- **Quick Access** - Instant optimization from your menu bar
-- **System Tray** - Always available without opening the full app
-- **One-Click Actions** - Purge memory, clear caches, flush DNS instantly
-- **Profile Runner** - Execute saved profiles with a single click
-
-### **User Profiles** 
-- **Save Configurations** - Create custom optimization profiles
-- **Quick Switching** - Instantly switch between different setups
-- **Profile Management** - Load, save, delete, and run profiles
-- **Default Profiles** - Pre-configured for common use cases
-
-### **Spotlight Re-indexing**
-- **Rebuild Search Index** - Fix Spotlight search issues
-- **Performance Recovery** - Restore search functionality
-- **Background Processing** - Non-intrusive re-indexing
-
-### **Auto-Update System**
-- **GitHub Integration** - Automatic update checking
-- **One-Click Updates** - Download latest versions instantly
-- **Version Notifications** - Stay informed about new features
-- **Release Notes** - See what's new in each update
-
-### **One-Click DMG Installation**
-- **Professional Installer** - Beautiful DMG with drag-and-drop installation
-- **Code Signing** - Trusted installation for enhanced security
-- **Universal Binary** - Optimized for all Apple Silicon and Intel Macs
-- **Automated Building** - CI/CD pipeline for consistent releases
-
-## Why OptiMac Enhanced?
-
-- ** Apple Silicon Optimized** - Purpose-built for M1, M2, M3, and future processors
-- ** Beautiful Interface** - Clean, modern GUI with organized tabs and real-time feedback
-- ** Instant Results** - See performance improvements immediately with detailed logging
-- ** Safe & Reversible** - Built-in safety checks and backup options
-- ** Easy to Use** - No terminal knowledge required – perfect for all skill levels
-- ** Menu Bar Power** - Quick optimizations without opening the full app
-- ** Personalized** - Create and save custom optimization profiles
+###What's New:
+- Native Swift/SwiftUI - Complete rewrite for modern macOS
+- Enhanced Performance - Optimised for Apple Silicon and Intel Macs
+- Professional Distribution - Clean DMG installer package
+- Improved UI/UX - Modern macOS design language
+- Rebuild Spotlight Index - Restore Search functionality
 
 ## Key Features
 
@@ -83,9 +49,9 @@ OptiMac Enhanced is a comprehensive, user-friendly macOS optimization suite that
 ## Installation Options
 
 ### Option 1: DMG Installer (Recommended)
-1. **Download** the latest `OptiMac-Enhanced-v2.0.0.dmg` from [Releases](https://github.com/VonKleistL/OptiMac/releases)
+1. **Download** the latest `OptiMac-DMG Installer from [Releases](https://github.com/VonKleistL/OptiMac/releases)
 2. **Open** the DMG file
-3. **Drag** OptiMac Enhanced to your Applications folder
+3. **Drag** OptiMac to your Applications folder
 4. **Launch** from Applications or enable menu bar mode
 
 ### Option 2: Source Code
@@ -114,22 +80,6 @@ python3 enhanced_macos_optimizer.py --menubar
 - Quick access to common optimizations
 - Profile execution with one click
 - Ideal for daily maintenance tasks
-
-### **Profile System**
-- **Performance Boost** - Quick daily optimizations
-- **Developer Setup** - Development environment tuning
-- **Network Optimization** - Connectivity improvements
-- **Custom Profiles** - Create your own optimization sets
-
-## Performance Gains
-
-Users typically see:
-- **15-30% faster app launches** after animation optimizations
-- **200-500MB RAM freed** through memory and cache cleaning
-- **Improved thermal performance** under sustained workloads
-- **Faster file operations** with Finder optimizations
-- **Reduced system lag** during intensive tasks
-- **Better search performance** with Spotlight re-indexing
 
 ## Safety First
 
@@ -169,30 +119,13 @@ This creates a distributable DMG file ready for sharing!
 
 ## Contributing
 
-OptiMac Enhanced is open source and welcomes contributions!
+OptiMac is open source and welcomes contributions!
 
 - ** Bug Reports** - Help me improve stability
 - ** Feature Requests** - Share optimization ideas
 - ** Code Contributions** - Add new optimizations or improve the UI
 - ** Documentation** - Help other users get the most out of OptiMac
 - ** UI/UX Improvements** - Make the interface even better
-
-##  Roadmap
-
-**v2.1 - Coming Soon:**
-- ** Dark mode support** - Modern UI that matches macOS appearance
-- ** Performance monitoring** - Real-time system metrics dashboard  
-- ** Scheduled optimizations** - Set and forget optimization routines
-- ** Profile sync** - Share settings across multiple Macs
-- ** Smart notifications** - Proactive optimization suggestions
-
-## Auto-Updates
-
-OptiMac Enhanced features built-in update checking:
-- **Automatic Detection** - Checks GitHub releases for new versions
-- **One-Click Downloads** - Direct links to latest releases
-- **Version Comparison** - Shows what's new in each update
-- **Background Checking** - Non-intrusive update notifications
 
 ## Support & Community
 
@@ -203,11 +136,11 @@ OptiMac Enhanced features built-in update checking:
 
 ## License
 
-OptiMac Enhanced is released under the [MIT License](LICENSE), making it free to use, modify, and distribute.
+OptiMac is released under the [MIT License](LICENSE), making it free to use, modify, and distribute.
 
 ## Support the Project
 
-If OptiMac Enhanced helped speed up your Mac:
+If OptiMac helped speed up your Mac:
 - ** Star the repository** to help others discover it
 - ** Share on social media** - Spread the word to fellow Mac users  
 - ** Contribute code** - Help make OptiMac even better
@@ -218,6 +151,5 @@ If OptiMac Enhanced helped speed up your Mac:
 
 *Built for the Apple Silicon Mac community by [VonKleistL](https://github.com/VonKleistL)*
 
-![OptiMac Enhanced](https://img.shields.io/badge/OptiMac-Enhanced%20v2.0-blue?style=for-the-badge&logo=apple)
 ![macOS](https://img.shields.io/badge/macOS-10.15%2B-green?style=for-the-badge&logo=apple)
 ![Apple Silicon](https://img.shields.io/badge/Apple%20Silicon-Optimized-red?style=for-the-badge&logo=apple)
