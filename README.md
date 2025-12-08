@@ -58,7 +58,7 @@ pip3 install -r requirements.txt
 python3 enhanced_macos_optimizer.py
 ```
 
-### Option 3: Menu Bar Only Mode - *Note this only works for version 2.0*
+### Option 3: Menu Bar Only Mode 
 ```bash
 python3 enhanced_macos_optimizer.py --menubar
 ```
@@ -71,7 +71,7 @@ python3 enhanced_macos_optimizer.py --menubar
 - Detailed logging and progress tracking
 - Perfect for thorough system optimization
 
-### **Menu Bar Mode** (NOTE - This only works for version 2.0)
+### **Menu Bar Mode**
 - Lightweight system tray integration
 - Quick access to common optimizations
 - Profile execution with one click
