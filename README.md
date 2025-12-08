@@ -7,12 +7,6 @@
 **MacOS optimisation tool written in native swiftUI. Clean, easy to use and most importantly incredibly minimal on resources.
 ## What's New in v3.0
 
-###What's New:
-- Native Swift/SwiftUI - Complete rewrite for modern macOS
-- Professional Distribution - Clean DMG installer package
-- Improved UI/UX - Modern macOS design language
-- Rebuild Spotlight Index - Restore Search functionality
-
 ## Key Features
 
 ### Memory & Performance
@@ -54,7 +48,7 @@
 1. **Download** the latest `OptiMac-DMG Installer from [Releases](https://github.com/VonKleistL/OptiMac/releases)
 2. **Open** the DMG file
 3. **Drag** OptiMac to your Applications folder
-4. **Launch** from Applications or enable menu bar mode
+4. **Launch** from Applications
 
 ### Option 2: Source Code
 ```bash
@@ -64,7 +58,7 @@ pip3 install -r requirements.txt
 python3 enhanced_macos_optimizer.py
 ```
 
-### Option 3: Menu Bar Only Mode
+### Option 3: Menu Bar Only Mode - *Note this only works for version 2.0*
 ```bash
 python3 enhanced_macos_optimizer.py --menubar
 ```
@@ -77,7 +71,7 @@ python3 enhanced_macos_optimizer.py --menubar
 - Detailed logging and progress tracking
 - Perfect for thorough system optimization
 
-### **Menu Bar Mode** 
+### **Menu Bar Mode** (NOTE - This only works for version 2.0)
 - Lightweight system tray integration
 - Quick access to common optimizations
 - Profile execution with one click
