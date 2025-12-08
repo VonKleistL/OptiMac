@@ -9,7 +9,6 @@
 
 ###What's New:
 - Native Swift/SwiftUI - Complete rewrite for modern macOS
-- Enhanced Performance - Optimised for Apple Silicon and Intel Macs
 - Professional Distribution - Clean DMG installer package
 - Improved UI/UX - Modern macOS design language
 - Rebuild Spotlight Index - Restore Search functionality
@@ -96,8 +95,8 @@ OptiMac Enhanced prioritizes system stability:
 
 ## System Requirements
 
-- **macOS 10.15+** (Catalina or later)
-- **Apple Silicon Mac** (M1, M1 Pro/Max, M2, M2 Pro/Max, M3, M3 Pro/Max) or Intel Mac
+- **macOS 15+ +** (Sequoia or later)
+- **Apple Silicon Mac** (M1, M1 Pro/Max, M2, M2 Pro/Max, M3, M3 Pro/Max)
 - **Python 3.8+** (pre-installed on macOS)
 - **Administrator privileges** (for system-level optimizations)
 - **Internet connection** (for update checking)
