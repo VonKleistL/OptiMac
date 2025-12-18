@@ -44,17 +44,15 @@
 3. **Drag** OptiMac to your Applications folder
 4. **Launch** from Applications
 
-### Option 2: Source Code
+## Option 2: Build from source
+
 ```bash
 git clone https://github.com/VonKleistL/OptiMac.git
 cd OptiMac
-pip3 install -r requirements.txt
-python3 enhanced_macos_optimizer.py
-```
-
-### Option 3: Menu Bar Only Mode 
+### Building DMG
 ```bash
-python3 enhanced_macos_optimizer.py --menubar
+chmod +x build_dmg.sh
+./build_dmg.sh
 ```
 
 ## Usage Modes
@@ -90,16 +88,6 @@ OptiMac Enhanced prioritizes system stability:
 - **Internet connection** (for update checking)
 
 ## Building from Source
-
-### For Development
-```bash
-git clone https://github.com/VonKleistL/OptiMac.git
-cd OptiMac
-### Building DMG
-```bash
-chmod +x build_dmg.sh
-./build_dmg.sh
-```
 
 This creates a distributable DMG file ready for sharing!
 
