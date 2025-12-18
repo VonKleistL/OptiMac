@@ -95,10 +95,6 @@ OptiMac Enhanced prioritizes system stability:
 ```bash
 git clone https://github.com/VonKleistL/OptiMac.git
 cd OptiMac
-pip3 install -r requirements.txt
-python3 enhanced_macos_optimizer.py
-```
-
 ### Building DMG
 ```bash
 chmod +x build_dmg.sh
