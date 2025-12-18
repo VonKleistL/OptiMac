@@ -36,12 +36,6 @@
 - **Homebrew cleanup** - Optimize package manager for better performance
 - **Node.js configuration** - Native Apple Silicon setup for web development
 
-### Advanced Settings
-- **Thermal management** - Optimize CPU throttling for sustained performance
-- **Power management** - Balance performance with energy efficiency
-- **Kernel parameter tweaks** - Advanced system-level optimizations
-- **Automatic backups** - Create restore points before major changes
-
 ## Installation Options
 
 ### Option 1: DMG Installer (Recommended)
