@@ -122,6 +122,7 @@ If OptiMac helped speed up your Mac:
 
 ---
 
+Support the developer and request new features - https://www.paypal.me/LukeVonKleist
 
 *Built for the Apple Silicon Mac community by [VonKleistL](https://github.com/VonKleistL)*
 
