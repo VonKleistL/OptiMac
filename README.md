@@ -1,3 +1,7 @@
+OptiMac has been updated and rebuilt from the ground up. Full system cleaner, Package Manager update and cache clearing, One-touch App Uninstaller!
+Check it out here: https://www.optitools.org/optimac
+
+
 ![CleanShot 2025-10-27 at 15 34 59@2x](https://github.com/user-attachments/assets/647b8195-19e3-45a6-aa22-dbc6a97f6e83)
 ![CleanShot 2025-10-27 at 15 35 14@2x](https://github.com/user-attachments/assets/2d4c3ea5-d850-4006-b71b-4d7106ba75c1)
 
